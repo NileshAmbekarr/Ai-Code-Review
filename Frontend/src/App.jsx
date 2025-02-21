@@ -8,7 +8,7 @@ import Markdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
 
-const API_ENDPOINT = 'https://ai-code-review-rho.vercel.app/'; 
+const API_ENDPOINT = 'http://localhost:3000/ai/get-review'; 
 
 function App() {
   const [code, setCode] = useState(`function sum(a, b){ return a+b }`);

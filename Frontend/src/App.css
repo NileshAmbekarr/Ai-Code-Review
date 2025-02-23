@@ -16,7 +16,6 @@ main{
   height: 100%;
   width: 100%;
   padding: 1rem;
-  border: 2px solid yellow;
   display: flex;
   gap: 1rem;
 }
@@ -38,9 +37,9 @@ main .left .review {
   bottom:1rem;
   right: 1rem;
   padding: 1rem 3rem;
-  background-color: rgb(219, 224, 247);
+  background-color: rgb(45, 79, 228);
   font-weight: 600;
-  color: black;
+  color: #ffffff;
   border-radius: 0.7rem;
   cursor: pointer;
   user-select: none;
@@ -61,4 +60,32 @@ main .right{
   padding : 2rem;
   font-size: 1.2rem;
   overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 30px;
+  line-height: 1.2em;
+  height:1.2em;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.loader:before {
+  content:"Thinking...\A⌰hinking...\A⌰⍜inking...\A⌰⍜⏃nking...\A⌰⍜⏃⎅king...\A⌰⍜⏃⎅⟟ing...\A⌰⍜⏃⎅⟟⋏ng...\A⌰⍜⏃⎅⟟⋏☌g...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; 
+  white-space: pre;
+  display: inline-block;
+  animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+  100%{transform: translateY(-100%)}
 }

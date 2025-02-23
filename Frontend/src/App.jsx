@@ -53,7 +53,7 @@ function App() {
         {review ? (
           <Markdown rehypePlugins={[rehypeHighlight]}>{review}</Markdown>
         ) : (
-          <p>No review available yet.</p>
+          <p className='loader'></p>
         )}
       </div>
     </main>
